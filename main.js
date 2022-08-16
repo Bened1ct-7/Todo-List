@@ -64,7 +64,8 @@ function complete(selected) {
     console.log(todos[selected.id]);
     localStorage.setItem('task-list', JSON.stringify(todos));
   } else {
-    selected.parentNode.parentNode.classList.remove('checked')
+    selected.parentNode.parentNode.classList.remove('checked');
+    localStorage.setItem('task-list', JSON.stringify(todos));
   }
 }
 
