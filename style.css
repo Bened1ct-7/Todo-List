@@ -138,9 +138,9 @@ main .filters {
 .filters button {
   color: #fff;
   width: 5rem;
-  padding: .4rem;
+  padding: .3rem 0;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .85rem;
   background: var(--main-color);
   border: 1px solid transparent;
   transition: .3s ease;
