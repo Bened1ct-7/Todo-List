@@ -195,6 +195,12 @@ main .task-box {
   gap: .4rem;
 }
 
+
+.task-box ul {
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+
 ul .para {
   text-align: center;
   font-family: "ubuntu", sans-serif;
