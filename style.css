@@ -197,7 +197,7 @@ main .task-box {
 
 
 .task-box ul {
-  max-height: 15rem;
+  max-height: 25rem;
   overflow-y: scroll;
 }
 
