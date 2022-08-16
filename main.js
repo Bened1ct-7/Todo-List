@@ -65,6 +65,7 @@ function complete(selected) {
     localStorage.setItem('task-list', JSON.stringify(todos));
   } else {
     selected.parentNode.parentNode.classList.remove('checked');
+    todos[selected.id].status = 'pending';
     localStorage.setItem('task-list', JSON.stringify(todos));
   }
 }
