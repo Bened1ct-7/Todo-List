@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+:root {
+  --body-bg: #757DD0;
+  --main-color: #4554D0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  background: var(--body-bg);
+}
+
+.container {
+  margin: 2rem auto 0;
+  padding-bottom: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  width: 22rem;
+}
+
+.header {
+  background: #efefef;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.header h1 {
+   font-size: 2.3rem;
+}
+
+.header span {
+  color: var(--main-color);
+  font-size: 2.3rem;
+}
+
+header {
+  text-align: center;
+  padding: .5rem 0 1rem;
+  border-bottom: 1px solid #999;
+}
+
+header h1 {
+  margin-top: .3rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  font-family: "ubuntu", sans-serif;
+}
+
+main {
+  margin: 1rem 0;
+}
+
+main form>div {
+  height: 2.4rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .2rem;
+  position: relative;
+}
+
+main form input,
+main form button {
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+#search-input {
+  width: 100%;
+}
+
+form input:focus {
+  outline: 1px solid var(--main-color);
+}
+
+form input {
+  width: 75%;
+  outline: none;
+  background: #fff;
+  padding: 0 1.1rem 0 2rem;
+}
+
+form button {
+  width: 25%;
+  color: #fff;
+  font-weight: 500;
+  background: var(--main-color);
+  border: 1px solid transparent;
+  transition: .3s ease;
+}
+
+form input::placeholder {
+  color: #b5b5b5;
+}
+
+main form>div>i {
+  position: absolute;
+  top: 50%;
+  transform: translate(.5rem, -50%);
+  color: #b5b5b5;
+  margin-right: .1rem;
+}
+
+main .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto 1rem;
+}
+
+.filters .main-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .7rem;
+}
+
+.main-filters p.active {
+  color: var(--main-color);
+}
+
+.filters button {
+  color: #fff;
+  width: 5rem;
+  padding: .4rem;
+  font-weight: 500;
+  font-size: 1rem;
+  background: var(--main-color);
+  border: 1px solid transparent;
+  transition: .3s ease;
+  border-radius: 5px;
+}
+
+main .task-box {
+  margin: .1rem 0 1rem;
+  padding: 1rem;
+}
+
+.task-box ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-left: 3px solid #ccc;
+  margin-bottom: .8rem;
+  transition: .2s ease;
+  background: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.task-box ul li.checked {
+  border-left: 3px solid var(--main-color);
+  background: #e5e5e5;
+}
+
+.task-box ul li.checked .name {
+  text-decoration: line-through;
+}
+
+.task-box ul li:hover{
+  border-left-color: var(--main-color);
+}
+
+.task-box ul li i {
+  color: #444;
+}
+
+.task-box ul li:hover i,
+.task-box ul li.checked i{
+  color: var(--main-color);
+}
+
+.task-box ul li .task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+}
+
+ul .para {
+  text-align: center;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+ul li .name {
+  font-weight: 400;
+}
+
+ul li input[type="checkbox"] {
+  height: 1rem;
+  width: 1rem;
+}
+
+@media screen and (max-width: 380px) {
+   html {
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   html {
+      font-size: 12px;
+   }
+}
+
+@media screen and (max-width: 280px) {
+   html {
+      font-size: 10px;
+   }
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fffd17f093.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Ben<span>Coding...</span></h1>
+  </header>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <main>
+      <form action="#" id="search-task">
+        <div class="form-box .search-box">
+          <input type="search" id="search-input" placeholder="Search task...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </form>
+      <div class="filters">
+        <div class="main-filters">
+          <p id="all" class="active">All</p>
+          <p id="pending">Pending</p>
+          <p id="completed">Completed</p>
+        </div>
+        <button id="clear-btn">Delete All</button>
+      </div>
+      <div class="task-box">
+        <ul></ul>
+      </div>
+      <form action="#" id="add-task">
+        <div class="form-box">
+          <input type="text" id="add input" placeholder="Add task...">
+          <button>
+            <i class="fa-solid fa-circle-plus"></i>
+            Add
+          </button>
+          <i class="fa-solid fa-pen"></i>
+        </div>
+      </form>
+    </main>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
